@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Somos um blog de dicas, noticias e tutoriais tecnologicos para alavancar negócios.">
+    <meta name="description"
+        content="Somos um blog de dicas, noticias e tutoriais tecnologicos para alavancar negócios.">
     <!-- Favico -->
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     <!-- Import CSS MDB -->
@@ -17,44 +19,46 @@
     <!-- Jquery -->
     <script src="{{url_for('static', filename='js/jquery-3.41.mim.js')}}"></script>
     <!-- Google Fonts Roboto -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
 
     <title>{{title}}</title>
 </head>
+
 <body class="bg-light">
     <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="{{url_for('static',filename='img/logo_blog_topo_color.png')}}" alt="">
-      </a>
-      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-        data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <form class="me-3 d-none">
-          <div class="form-white input-group" style="width: 250px;">
-            <input type="search" class="form-control rounded" placeholder="Pesquisar"
-              aria-label="Search" aria-describedby="search-addon" />
-          </div>
-        </form>
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link link-menu" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Categorias</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">O LAB</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contato</a>
-          </li>
-        </ul>
-        <!-- <ul class="navbar-nav d-flex flex-row ms-auto me-3">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="{{url_for('static',filename='img/logo_blog_topo_color.png')}}" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="me-3 d-none">
+                    <div class="form-white input-group" style="width: 250px;">
+                        <input type="search" class="form-control rounded" placeholder="Pesquisar" aria-label="Search"
+                            aria-describedby="search-addon" />
+                    </div>
+                </form>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link link-menu" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Categorias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">O LAB</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+                <!-- <ul class="navbar-nav d-flex flex-row ms-auto me-3">
           <li class="nav-item me-3 me-lg-0 dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
               aria-expanded="false">
@@ -89,54 +93,162 @@
             </ul>
           </li>
         </ul> -->
-      </div>
-    </div>
-  </nav>
-  <!-- Navbar -->
-  <section class="container-fluid mt-4">
-      <div class="row  gx-3">
-          <div class="col-md-8 ">
-            <div class="p-3 border ">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <img src="..." class="d-block w-100" alt="...">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="..." class="d-block w-100" alt="...">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="..." class="d-block w-100" alt="...">
-                              </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
+    <section class="container mt-4">
+        <div class="row  gx-3">
+            <div class="col-md-8 ">
+                <div class=" ">
+                    <!-- Primeira linha -->
+                    <div class="row">
+                        <div class="col-md-12">
+
+
+                            <!-- Aqui deve ser gerado dinamicamente os destaques -->
+
+                            <!-- Carousel wrapper -->
+                            <div id="carouselBasicExample" class="carousel slide carousel-fade"
+                                data-mdb-ride="carousel">
+                                <!-- Indicators -->
+                                <div class="carousel-indicators">
+                                    <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="0"
+                                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="1"
+                                        aria-label="Slide 2"></button>
+                                    <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="2"
+                                        aria-label="Slide 3"></button>
+                                </div>
+
+                                <!-- Inner -->
+                                <div class="carousel-inner">
+                                    <!-- Single item -->
+                                    <div class="carousel-item active">
+                                        <img src="https://picsum.photos/900/450" class="d-block w-100"
+                                            alt="Sunset Over the City" />
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h3>First slide label</h3>
+                                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Single item -->
+                                    <div class="carousel-item">
+                                        <img src="https://picsum.photos/900/450" class="d-block w-100"
+                                            alt="Canyon at Nigh" />
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h3>Second slide label</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Single item -->
+                                    <div class="carousel-item">
+                                        <img src="https://picsum.photos/900/450" class="d-block w-100"
+                                            alt="Cliff Above a Stormy Sea" />
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h3>Third slide label</h3>
+                                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Inner -->
+
+                                <!-- Controls -->
+                                <button class="carousel-control-prev" type="button"
+                                    data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
+                                    <i class="fas fa-chevron-left"></i></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
+                                    <i class="fas fa-chevron-right"></i></span>
+                                    <span class="visually-hidden">proxima</span>
+                                </button>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Next</span>
-                            </button>
-                          </div>
+                            <!-- Carousel wrapper -->
+                        </div>
+                    </div>
+                    <!-- Linha de  -->
+                    <div class="row mt-4">
+                        <div class="col-10">
+                            <p class="fs-5 text-primary fw-bold">Marketing</p>
+                        </div>
+                        <div class="col-2">
+                            <p class="small "><a href="#" class="text-primary">Ver todos<i
+                                        class="fas fa-angle-right ms-1"></i></a></p>
+                        </div>
+
+                    </div>
+                    <div class="row  gx-3 mb-5">
+                        <div class="col-md-8">
+                            <div class="">
+                                <div class="card w-100" style="border-radius:0px;">
+
+                                    <div class="position-relative topo-card-categoria" id="">
+
+                                        <img src="https://picsum.photos/450/350" style=" border-radius:0px;"
+                                            class="  card-img-top w-100" alt="Chicago Skyscrapers" />
+
+
+                                        <div class="mascara ico-mascara">
+                                            <div class="box-card-tag" style="">
+                                                <p class="card-title  text-primary ms-3 bg-white ps-1 pe-1 small">
+                                                    Marketing</p>
+                                            </div>
+                                            <div class="box-card-title shadow" style="">
+                                                <a href="#">
+                                                    <h4 class="card-title  text-white ms-3">Trafego Pago</h4>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="card-body bg-primary " style=" border-radius:0px;">
+                                        <p class="card-text text-white fs-5">O tráfego estratégico está mudando tudo, as
+                                            maiores empresas fazem trafe ... </p>
+                                        <div class="d-flex justify-content-end fs-6 mt-4">
+                                            <div class="text-center fs-5 me-auto">
+                                                <i class="fas fa-heart text-white p-md-1 my-1 me-0"
+                                                    data-mdb-toggle="tooltip" data-mdb-placement="top"
+                                                    title="Eu gostei"></i>
+                                                <i class="far fa-comment text-white p-md-1 my-1 me-0"
+                                                    data-mdb-toggle="tooltip" data-mdb-placement="top"
+                                                    title="Comente esté post"></i>
+                                                <i class="fas fa-share-alt text-white p-md-1 my-1 me-2"
+                                                    data-mdb-toggle="tooltip" data-mdb-placement="top"
+                                                    title="Compartilhe esse post"></i>
+                                            </div>
+                                            <span><a href="#" class="card-categoria-link btn">Ler mais.</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="p-3 bg-dark">
+                                cards
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-          </div>
-          <aside class="col-md-4 ">
-            <div class="p-3 border d-none d-md-block ">
-                <!-- Lateral -->
-                Lateral
-            </div>
-          </aside>
-      </div>
-  </section>
-    
+            <aside class="col-md-4 ">
+                <div class="p-3 border d-none d-md-block ">
+                    <!-- Lateral -->
+                    Lateral
+                </div>
+            </aside>
+        </div>
+    </section>
 
-<!-- Scripts MDB -->
-<script src="{{url_for('static', filename='js/mdb.min.js')}}"></script>
-<!-- Scripts Personalizados -->
-<script src="{{url_for('static', filename='js/script.js')}}"></script>
+
+    <!-- Scripts MDB -->
+    <script src="{{url_for('static', filename='js/mdb.min.js')}}"></script>
+    <!-- Scripts Personalizados -->
+    <script src="{{url_for('static', filename='js/script.js')}}"></script>
 </body>
+
 </html>

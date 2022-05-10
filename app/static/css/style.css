@@ -29,7 +29,6 @@
       position: absolute;
       top:380px;
       left: 30px;
-      width: 100%;
       padding: 10px;
       border:0px;
       background-color: #fff;
@@ -39,17 +38,21 @@
 
   .box-card-title{
     position: absolute;
-    top: 380px;
+    top: 80%;
+    width: fit-content !important;
+    block-size: fit-content !important;
     padding: 5px;
     /* background-color: #fff; */
-    width: 100%;
-
   }
 
+
+  
+
   .box-card-tag{
-    position: absolute;
-    top: 350px;
-    padding: 5px;
+    display: inline-block !important;
+        padding: 5px;
+        width: fit-content !important;
+        block-size: fit-content !important;
     /* background-color: #fff; */
 
   }
@@ -78,7 +81,7 @@
     display: block;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.644)!important;
+    background: rgba(0, 0, 0, 0.336)!important;
     width: 100%;
     height: 100%;
   }
@@ -93,6 +96,54 @@
 
   }
 
+  .post-categoria-mini{
+    width: 100% !important;
+    height: 143px !important;
+  }
+
+  .box-title-categoria-mini{
+    position: absolute;
+    top: 45%;
+    width: fit-content !important;
+    block-size: fit-content !important;
+    padding: 5px;
+  }
+
+  .mascara-mini-categoria{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.315)!important;
+    width: 100%;
+    height: 100%;
+  }
+
+  .mascara-mini-categoria:hover{
+    background-image: url(../img/bg-transparence.png), url(../img/camera-brand.png) !important;
+
+    background-position: left, center !important;
+    background-repeat: repeat, no-repeat  !important;
+    opacity: 0.8 !important;
+    cursor: pointer !important;
+
+  }
   
 
 /* LINK MENU */
+
+
+
+/* Mobile */
+@media (max-width: 576px) { 
+  
+  .box-card-title{
+    position: absolute !important;
+    top: 70% !important;
+    width: fit-content !important;
+    block-size: fit-content !important;
+    padding: 5px !important;
+    /* background-color: #fff; */
+  }
+
+ }
